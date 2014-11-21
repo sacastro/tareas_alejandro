@@ -1,0 +1,21 @@
+@charset "UTF-8";
+#reloj{
+	font-size:40px;
+	font-family:Verdana, Geneva, sans-serif;
+	width:60px;
+	height:60px;
+	margin:0 aunto;
+	display:inline;
+	position:fixed;
+	left:50%;
+	margin-left:-82px;
+	color:#eeeee4;
+	}/* CSS Document */
+	
+	body{background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-position:center;
+	width:100%}
+	
+
+

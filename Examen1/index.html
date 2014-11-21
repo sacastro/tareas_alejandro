@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Examen Primer Parcial</title>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
+        
+        <style type="text/css">
+	
+			body{
+				background-color:#D9D9D9;
+			}
+			
+			h1 {
+				font-family: Helvetica, sans-serif;
+				font-size:20px;
+				float:left;
+				margin:15px auto;
+				color:#FFFFFF;
+				width:100%;
+
+			}
+			
+			#contmes{
+				width:100%;
+				float:left;
+			}
+				
+			#contdia{
+				width:100%;
+				float:left;
+			}
+			
+			.mes {
+				width: 50px;
+				height: 50px;
+				margin:5px;
+				float: left;
+				background: #de9301;
+			}
+			
+			.dia {
+				width: 20px;
+				height:20px;
+				margin:5px;
+				float: left;
+				background: #01c7de;
+			}
+			
+		</style>
+		
+		<script type="text/javascript" charset="utf-8">
+		
+		</script>
+</head>
+
+<body>
+		<h1>Mes</h1>
+		<div id="contmes"></div>
+		<div class="clear"></div>
+		<h1>Dia</h1>
+		<div id="contdia"></div>
+        
+        <script type="text/javascript" charset="utf-8">
+		
+			var mes = new Date()
+			var meses = mes.getMonth()
+			var dias = mes.getDate()
+			
+			function divsMeses(){
+		
+				for(i= 0; i<=meses; i++){
+					jQuery('#contmes').append('<div class="mes"></div>')
+				};
+			};
+			
+			function divsDias(){
+					
+				for(i= 1; i<=dias; i++){
+					jQuery('#contdia').append('<div class="dia"></div>')
+				};
+
+			};
+			
+			divsMeses();
+			divsDias();
+			
+			$(document).ready(function() {
+			
+			$(".mes").click(function(){
+				$(this).fadeOut(5000)});
+			
+				
+				$(".dia").click(function(){
+				$(this).fadeOut(5000)});
+			
+			})
+			
+		</script>
+	
+</body>
+</html>

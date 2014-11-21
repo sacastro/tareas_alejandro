@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*FONT*/
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+
+/*-----------------------*/
+/*------TEXT STYLES------*/
+
+h1{
+	font-size: 3em;
+	font-weight:10;	
+	color: #fff;
+	margin:0;
+	margin-top:35px;
+	text-align:center;
+}
+
+h2{
+	font-size: 2em;
+	font-weight:10;
+	color:#fff;
+	margin:0;
+	text-align:center;
+}
+
+.clearfix{
+	clear:both;	
+}
+
+body{
+	background-color:#2980b9;
+	font-family: 'Lato', 'sans-serif';	
+	margin:0;
+	padding:0;
+}
+
+#overlay1{
+	background:black;
+	opacity:.4;
+	width:100%;
+	height:100%;
+	position:fixed;
+	z-index:5;
+	top:0;
+	left:0;
+		transition:ease-in-out .2s;
+}
+#overlay2{
+	width:100%;
+	height:100%;
+	position:fixed;
+	z-index:4;
+	top:0;
+	left:0;
+	border-width:30px 30px 90px 30px;
+	border-color:black;
+	border-style:solid;
+	box-sizing:border-box;
+	visibility:hidden;
+	z-index:2;
+		transition:ease-in-out .2s;
+}
+
+
+.imagen
+{	width: 32px;
+	height: 29px;
+	position: fixed;
+	bottom: 20px;
+	left: 50%;
+	margin: 5px;
+}
+
+.close
+{	width: 32px;
+	height: 39px;
+	position: fixed;
+	bottom: 15px;
+	left: 50%;
+	margin: 5px;
+	z-index:3;
+		transition:ease-in-out .2s;
+}
+
+#lista
+{	float:left;
+	width: 100%;
+	height: 30px;
+	position:fixed;
+	bottom: 20px;
+	z-index:1;
+}
+
+
+
+
+#lista ul
+{
+	text-align: center;
+}
+
+#lista li
+{	display: inline-block;	
+}
+
+#lista ul li a{
+	text-decoration:none;
+	color:#FFF;
+	font-size:2em;
+	padding: 0 100px;
+	transition:ease-in-out .2s;
+	z-index:2;
+}

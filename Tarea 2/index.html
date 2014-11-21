@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>The Time</title>
+<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+
+<body>
+<script type="text/javascript">
+function startTime(){
+today=new Date();
+h=today.getHours();
+m=today.getMinutes();
+s=today.getSeconds();
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('reloj').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);}
+function checkTime(i)
+{if (i<10) {i="0" + i;}return i;}
+window.onload=function(){startTime();}
+
+<!-- Begin
+document.write("<div align='center' style='font:bold 14px verdana;'>")
+day = new Date()
+hr = day.getHours()
+if (hr == 1) document.body.style.backgroundImage="url('img/tres.jpg')";
+if (hr == 2) document.body.style.backgroundImage="url('img/tres.jpg')";
+if (hr == 3) document.body.style.backgroundImage="url('img/tres.jpg')";
+if (hr == 4) document.body.style.backgroundImage="url('img/tres.jpg')";
+if (hr == 5) document.body.style.backgroundImage="url('img/tres.jpg')";
+if (hr == 6) document.body.style.backgroundImage="url('img/uno.jpg')";
+if (hr == 7) document.body.style.backgroundImage="url('img/uno.jpg')";
+if (hr == 8) document.body.style.backgroundImage="url('img/uno.jpg')";
+if (hr == 9) document.body.style.backgroundImage="url('img/uno.jpg')";
+if (hr == 10) document.body.style.backgroundImage="url('img/uno.jpg')";
+if (hr == 11) document.body.style.backgroundImage="url('img/uno.jpg')";
+if (hr == 12) document.body.style.backgroundImage="url('img/dos.jpg')";
+if (hr == 13) document.body.style.backgroundImage="url('img/dos.jpg')";
+if (hr == 14) document.body.style.backgroundImage="url('img/dos.jpg')";
+if (hr == 15) document.body.style.backgroundImage="url('img/dos.jpg')";
+if (hr == 16) document.body.style.backgroundImage="url('img/dos.jpg')";
+if (hr == 17) document.body.style.backgroundImage="url('img/dos.jpg')";
+if (hr == 18) document.body.style.backgroundImage="url('img/dos.jpg')";
+if (hr == 19) document.body.style.backgroundImage="url('img/dos.jpg')";
+if (hr == 20) document.body.style.backgroundImage="url('img/tres.jpg')";
+if (hr == 21) document.body.style.backgroundImage="url('img/tres.jpg')";
+if (hr == 22) document.body.style.backgroundImage="url('img/tres.jpg')";
+if (hr == 23) document.body.style.backgroundImage="url('img/tres.jpg')";
+if (hr == 0) document.body.style.backgroundImage="url('img/tres.jpg')";
+document.write("</div>")
+// End -->
+</SCRIPT>
+
+<div id="reloj"></div>
+
+</body>
+</html>

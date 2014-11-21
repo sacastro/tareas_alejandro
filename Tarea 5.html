@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tarea 5</title> 
+
+<script type="text/javascript" charset="utf-8">
+	function escribirPais(){
+		document.getElementById("textoPais").innerHTML=document.getElementById("pais").value;
+	}      
+</script>
+       <style type="text/css" media="screen">
+       	#textoPais
+		{
+			font-size: 100px;
+			text-align: center;
+		}
+       </style>
+</head>
+
+<body>
+<input type="text" name="pais" id="pais">
+	<input id="botonPais" type="button" value="Escribir pais" onclick="escribirPais();" /> 
+	
+	     <div id="textoPais"></div>
+	
+</body>
+</html>
